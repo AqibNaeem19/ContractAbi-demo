@@ -2,3 +2,20 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+.account-address,
+.contract-info{
+	color: pink;
+}
+
+.write-function{
+	background-color: rgb(221, 150, 18);
+}
+
+button{
+	border-radius: 15px 0px 15px 0px;
+}
+
+.horizontal-line{
+	width: 20vw;
+}

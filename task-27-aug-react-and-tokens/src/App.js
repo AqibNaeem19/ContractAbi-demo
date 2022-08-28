@@ -5,8 +5,9 @@ import Search from "./Components/Search";
 import Error from "./Components/Error";
 import "h8k-components";
 import axios from "axios";
+import Metamask from './Components/Metamask';
 
-const title = "PERN Stack Demo";
+const title = "Contract ABI demo";
 function App() {
   const [error, setError] = useState({ status: false, message: "" });
   const [studentList, setStudents] = useState([]);
@@ -36,7 +37,8 @@ function App() {
   return (
     <div className="App">
       <h8k-navbar header={title}></h8k-navbar>
-      <div className="layout-column justify-content-center align-items-center w-50 mx-auto">
+      <div className="layout-column justify-content-center align-items-center  mx-auto">
+        <Metamask />
         <Search
           error={error}
           setError={setError}

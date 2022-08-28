@@ -12,12 +12,13 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "save": "^2.3.1"
+    "save": "^2.3.1",
+    "web3": "^1.7.5"
   },
   "scripts": {
-    "prestart": "npm install",
-    "pretest": "npm install",
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "eject": "react-scripts eject",
     "test": "cross-env CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
   },
   "devDependencies": {
